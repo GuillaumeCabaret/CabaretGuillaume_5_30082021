@@ -1,0 +1,19 @@
+@use '../utils/color.scss';
+.filter {
+    border: 1px solid #bbb8b8;
+    color: color.$primary-color;
+    border-radius: 12px;
+    background-color: color.$text-background-color;
+    font-weight: 500;
+    padding: 3px 5px;
+    text-decoration: none;
+    margin: 5px 5px;
+    &:hover {
+        background-color: color.$primary-color;
+        color: color.$text-background-color;
+    }
+    &:focus {
+        background-color: color.$primary-color;
+        color: color.$text-background-color;
+    }
+}
