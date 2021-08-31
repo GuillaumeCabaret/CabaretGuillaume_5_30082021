@@ -1,0 +1,17 @@
+@use "../utils/color.scss";
+.homepage {
+    &__title {
+        max-width: 24%;
+        margin: 0;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        color: color.$primary-color;
+        font-weight: 500;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
