@@ -1,0 +1,53 @@
+@use "../utils/color.scss";
+.modal {
+    background-color: #DB8876;
+    width: 670px;
+    padding: 25px;
+    position: fixed;
+    top: 50px;
+    left: calc(50% - 335px);
+    display: none;
+    border-radius: 5px;
+    &__title {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    &__close {
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: white;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 5rem;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        &__input {
+            border-radius: 5px;
+            height: 40px;
+        }
+        &__label {
+            font-size: 2rem;
+            color: #312E2E;
+            &--hidden {
+                opacity: 0;
+            }
+        }
+        &__submit {
+            width: 170px;
+            background-color: color.$primary-color;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            padding: 15px;
+        }
+    }
+}
+
+#message {
+    height: 120px;
+}

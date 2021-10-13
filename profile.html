@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fisheye</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/42ffba49ab.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Page description">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="main-header__logo" alt="Fisheye Home Page" src="asset/logo.png" /></a>
+    </header>
+    <main>
+        <section id="profile" class="card--profile">
+        </section>
+        <section id="trier">
+            <label for="image-filter" id="FilterLabel">Trier par</label>
+            <select id=image-filter class="dropdown" aria-labelledby="FilterLabel">
+                <option value="">Filtres</option>
+                <option value="popularity">Popularité</option>
+                <option value="date">Date</option>
+                <option value="title">Titre</option>
+            </select>
+        </section>
+
+        <section id="gallery" class="gallery">
+
+        </section>
+        <div class="sticky">
+            <div class="sticky__likeCount">
+                <p class="like-number"></p><span class="fas fa-heart"></span></div>
+            <p class="sticky__tarif"></p>
+        </div>
+    </main>
+    <section class="modal" aria-labelledby="contactmeTitle">
+        <h2 class="modal__title" id="contactmeTitle">Contactez-moi <br/> Mimi Keel</h2>
+        <button class="modal__close"><span class="fas fa-times" aria-label="close contact form" aria-label="fermer"></span></button>
+        <form class="modal__form">
+            <label class="modal__form__label" for="prenom" id="labelPrenom">Prénom</label>
+            <input type="text" class="modal__form__input" id="prenom" aria-labelledby="labelPrenom" />
+            <label class="modal__form__label" for="nom" id="labelNom">Nom</label>
+            <input type="text" class="modal__form__input" id="nom" aria-labelledby="labelNom" />
+            <label class="modal__form__label" for="mail" id="labelMail">Email</label>
+            <input type="email" class="modal__form__input" id="mail" aria-labelledby="labelMail" />
+            <label class="modal__form__label" for="message" id="labelMessage">Votre message</label>
+            <input type="text" class="modal__form__input" id="message" aria-labelledby="labelMessage" />
+            <label class="modal__form__label--hidden" for="submit" id="labelSubmit">Envoie du message</label>
+            <input type="submit" class="modal__form__submit" id="submit" aria-labelledby="labelSubmit" />
+        </form>
+    </section>
+    <section id="lightbox" class="lightbox" aria-label="image closeup viex">
+        <div class="lightbox__container">
+            <button class="lightbox__button" id="lightbox__previous" aria-label="precedent"><span class="fas fa-chevron-left fa-7x "  aria-label="Previous Image"></span></button>
+            <div class="lightbox__content">
+            </div>
+            <button class="lightbox__button" id="lightbox__next" aria-label="suivant"><span class="fas fa-chevron-right fa-7x"  aria-label="Next Image"></span></button>
+            <button class="lightbox__close" aria-label="fermer"><span class="fas fa-times fa-7x" aria-label="Close Dialog"></span></button>
+        </div>
+
+    </section>
+    <script type="module" src="./scripts/profile.js"></script>
+    <!-- <script type="module" src="./scripts/modal.js"></script>
+    <script type="module" src="./scripts/Lightbox.js"></script> -->
+</body>
+
+</html>

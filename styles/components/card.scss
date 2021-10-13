@@ -1,56 +1,56 @@
-    @use "../utils/color.scss";
-    .card {
-        width: 350px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 15px;
-        text-align: center;
-        &__link {
-            text-decoration: none;
-        }
-        &__image {
-            border-radius: 50%;
-            height: 250px;
-            width: 250px;
-            overflow: hidden;
-            object-fit: cover;
-            margin: 15px auto;
-            &--profile {
-                margin-right: 0;
-            }
-        }
-        &__title {
-            color: color.$secondary-color;
-            font-size: 2rem;
-            &--profile {
-                font-size: 4rem;
-            }
-        }
-        &__location {
-            color: color.$primary-color;
-            &--profile {
-                font-size: 1.5rem;
-            }
-        }
-        &__price {
-            color: color.$text-color;
-        }
-        &__tags {
+        @use "../utils/color.scss";
+        .card {
+            width: 350px;
             display: flex;
-            flex-wrap: wrap;
-        }
-        &--profile {
-            display: flex;
-            padding: 0 50px;
-            max-height: 300px;
-            position: relative;
-            margin-bottom: 50px;
-            &__desc {
+            flex-direction: column;
+            align-items: center;
+            margin: 15px;
+            text-align: center;
+            &__link {
+                text-decoration: none;
+            }
+            &__image {
+                border-radius: 50%;
+                height: 250px;
+                width: 250px;
+                overflow: hidden;
+                object-fit: cover;
+                margin: 15px auto;
+                &--profile {
+                    margin-right: 0;
+                }
+            }
+            &__title {
+                color: color.$secondary-color;
+                font-size: 2rem;
+                &--profile {
+                    font-size: 4rem;
+                }
+            }
+            &__location {
+                color: color.$primary-color;
+                &--profile {
+                    font-size: 1.5rem;
+                }
+            }
+            &__price {
+                color: color.$text-color;
+            }
+            &__tags {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                font-size: 1.1rem;
+                flex-wrap: wrap;
+            }
+            &--profile {
+                display: flex;
+                padding: 0 50px;
+                max-height: 300px;
+                position: relative;
+                margin-bottom: 50px;
+                &__desc {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    font-size: 1.1rem;
+                }
             }
         }
-    }
