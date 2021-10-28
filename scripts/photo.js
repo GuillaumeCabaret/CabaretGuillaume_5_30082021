@@ -23,7 +23,7 @@ export class Photo {
                     <div class="gallery__item">
                         <div class="gallery__item__element" id="${index}">
                             <a alt="${this._title},closeup view" href="#${index}" class="gallery__lightbox-link">
-                                <img src="ressources/images/${folderName[0]}/${this._image}" class="gallery__item__image" alt-text ="${this._alt}" />
+                                <img src="asset/${folderName[0]}/${this._image}" class="gallery__item__image" alt-text ="${this._alt}" />
                             </a>                            
                         </div>
                         <div class="gallery__item__details">
@@ -36,6 +36,6 @@ export class Photo {
 
     }
     renderLightbox(folderName) {
-        return `<img src="ressources/images/${folderName[0]}/${this._image}" class="lightbox__image" alt="${this._title}"/><p class="lightbox__title">${this._title}</p>`;
+        return `<img src="asset/${folderName[0]}/${this._image}" class="lightbox__image" alt="${this._title}"/><p class="lightbox__title">${this._title}</p>`;
     }
 }

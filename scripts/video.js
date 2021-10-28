@@ -23,7 +23,7 @@ export class Video {
                         <div class="gallery__item__element" id="${index}">
                             <a alt="${this._title},closeup view" href="#${index}" class="gallery__lightbox-link">
                                 <video class="gallery__item__image"  tabindex="-1">
-                                    <source src="ressources/images/${folderName[0]}/${this._video}"></source>
+                                    <source src="asset/${folderName[0]}/${this._video}"></source>
                                     <p>${this._alt}</p>
                                 </video>
                             </a>
@@ -39,6 +39,6 @@ export class Video {
     }
     renderLightbox(folderName) {
 
-        return `<video controls class="lightbox__video"><source src="ressources/images/${folderName[0]}/${this._video}" alt="${this._title}"></source></video><p class="lightbox__title">${this._title}</p>`;
+        return `<video controls class="lightbox__video"><source src="asset/${folderName[0]}/${this._video}" alt="${this._title}"></source></video><p class="lightbox__title">${this._title}</p>`;
     }
 }

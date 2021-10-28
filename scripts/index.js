@@ -40,7 +40,6 @@ for (let filterElement of filters) {
         if (window.location.hash == filterElement.innerHTML.toLowerCase() && filterOn == true) {
             setTimeout(() => { window.location.hash = ""; }, 10);
         }
-
     })
 }
 //Render photograph

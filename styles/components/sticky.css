@@ -1,0 +1,40 @@
+@use "../utils/color.scss";
+.sticky {
+    background-color: #DB8876;
+    width: 300px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+    .sticky {
+        display: none;
+    }
+}
+
+.sticky__likeCount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 25%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+
+/*# sourceMappingURL=sticky.css.map */

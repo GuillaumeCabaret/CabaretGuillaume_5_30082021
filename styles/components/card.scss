@@ -18,6 +18,10 @@
                 margin: 15px auto;
                 &--profile {
                     margin-right: 0;
+                    @media only screen and (max-width: 600px) {
+                        height: 133px;
+                        width: 133px;
+                    }
                 }
             }
             &__title {
@@ -25,12 +29,18 @@
                 font-size: 2rem;
                 &--profile {
                     font-size: 4rem;
+                    @media only screen and (max-width: 600px) {
+                        font-size: 2.25rem;
+                    }
                 }
             }
             &__location {
                 color: color.$primary-color;
                 &--profile {
                     font-size: 1.5rem;
+                    @media only screen and (max-width: 600px) {
+                        font-size: 0.75rem;
+                    }
                 }
             }
             &__price {
@@ -46,11 +56,17 @@
                 max-height: 300px;
                 position: relative;
                 margin-bottom: 50px;
+                @media only screen and (max-width: 600px) {
+                    padding: 0 10px;
+                }
                 &__desc {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     font-size: 1.1rem;
+                    @media only screen and (max-width: 600px) {
+                        font-size: 0.75rem;
+                    }
                 }
             }
         }

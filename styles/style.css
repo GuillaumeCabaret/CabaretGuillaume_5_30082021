@@ -8,6 +8,11 @@
   text-decoration: none;
   margin: 5px 5px;
 }
+@media only screen and (max-width: 600px) {
+  .filter {
+    font-size: 0.75rem;
+  }
+}
 .filter:hover {
   background-color: #901c1c;
   color: #fafafa;
@@ -21,11 +26,15 @@
   font-family: "DM Sans", sans-serif;
 }
 
-body {
-  padding: 25px;
+h1 {
+  margin: 0;
 }
 
-h1 {
+h2 {
+  margin: 0;
+}
+
+p {
   margin: 0;
 }
 
@@ -34,14 +43,34 @@ a {
   padding: 0;
 }
 
+body {
+  padding: 25px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+}
+
 .main-header {
   display: flex;
   align-items: center;
   width: 75%;
 }
+@media only screen and (max-width: 600px) {
+  .main-header {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
 .main-header__logo {
   max-height: 80px;
   align-self: flex-start;
+}
+@media only screen and (max-width: 600px) {
+  .main-header__logo {
+    max-height: 40px;
+  }
 }
 .main-header__nav {
   display: flex;
@@ -72,6 +101,13 @@ a {
   color: #901c1c;
   font-weight: 500;
 }
+@media only screen and (max-width: 600px) {
+  .homepage__title {
+    font-size: 1rem;
+    top: 20px;
+    max-width: 100%;
+  }
+}
 .homepage__content {
   display: flex;
   flex-wrap: wrap;
@@ -94,6 +130,11 @@ a {
   border: 2px solid #901c1c;
   outline: none;
 }
+@media only screen and (max-width: 600px) {
+  .gallery__lightbox-link {
+    max-height: 190px;
+  }
+}
 .gallery__item {
   margin: 30px;
   margin-top: 100px;
@@ -102,24 +143,44 @@ a {
   overflow: hidden;
   cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+  .gallery__item {
+    margin-top: 25px;
+  }
+}
 .gallery__item__image {
   height: 300px;
   width: 100%;
   object-fit: cover;
 }
-.gallery__details {
+@media only screen and (max-width: 600px) {
+  .gallery__item__image {
+    max-height: 190px;
+  }
+}
+.gallery__item__details {
   color: #901c1c;
   padding: 5px;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
-.gallery__details__like {
+@media only screen and (max-width: 600px) {
+  .gallery__item__details {
+    font-size: 0.75rem;
+  }
+}
+.gallery__item__details__like {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.gallery__details__like i {
+@media only screen and (max-width: 600px) {
+  .gallery__item__details__like {
+    width: 30px;
+  }
+}
+.gallery__item__details__like i {
   margin-left: 7px;
 }
 
@@ -145,6 +206,12 @@ a {
 .card__image--profile {
   margin-right: 0;
 }
+@media only screen and (max-width: 600px) {
+  .card__image--profile {
+    height: 133px;
+    width: 133px;
+  }
+}
 .card__title {
   color: #d3573c;
   font-size: 2rem;
@@ -152,11 +219,21 @@ a {
 .card__title--profile {
   font-size: 4rem;
 }
+@media only screen and (max-width: 600px) {
+  .card__title--profile {
+    font-size: 2.25rem;
+  }
+}
 .card__location {
   color: #901c1c;
 }
 .card__location--profile {
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .card__location--profile {
+    font-size: 0.75rem;
+  }
 }
 .card__price {
   color: #525252;
@@ -172,11 +249,21 @@ a {
   position: relative;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 600px) {
+  .card--profile {
+    padding: 0 10px;
+  }
+}
 .card--profile__desc {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 1.1rem;
+}
+@media only screen and (max-width: 600px) {
+  .card--profile__desc {
+    font-size: 0.75rem;
+  }
 }
 
 .button {
@@ -193,6 +280,14 @@ a {
   border: none;
   margin-left: 100px;
   cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .button--contact {
+    position: fixed;
+    bottom: 30px;
+    left: calc(50% - 68px);
+    padding: 10px;
+  }
 }
 
 .like-button {
@@ -213,6 +308,11 @@ a {
   font-size: 1rem;
   border: none;
 }
+@media only screen and (max-width: 600px) {
+  .dropdown {
+    display: none;
+  }
+}
 
 .sticky {
   background-color: #DB8876;
@@ -227,6 +327,11 @@ a {
   padding: 20px;
   font-size: 1.3rem;
   font-weight: 700;
+}
+@media only screen and (max-width: 600px) {
+  .sticky {
+    display: none;
+  }
 }
 .sticky__likeCount {
   display: flex;
@@ -245,9 +350,24 @@ a {
   display: none;
   border-radius: 5px;
 }
+@media only screen and (max-width: 600px) {
+  .modal {
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+  }
+}
 .modal__title {
   font-size: 3rem;
   font-weight: 400;
+}
+@media only screen and (max-width: 600px) {
+  .modal__title {
+    font-size: 2rem;
+  }
 }
 .modal__close {
   cursor: pointer;
@@ -259,6 +379,13 @@ a {
   right: 15px;
   font-size: 5rem;
 }
+@media only screen and (max-width: 600px) {
+  .modal__close {
+    font-size: 2rem;
+    top: 20px;
+    right: 60px;
+  }
+}
 .modal__form {
   display: flex;
   flex-direction: column;
@@ -267,9 +394,19 @@ a {
   border-radius: 5px;
   height: 40px;
 }
+@media only screen and (max-width: 600px) {
+  .modal__form__input {
+    width: 340px;
+  }
+}
 .modal__form__label {
   font-size: 2rem;
   color: #312E2E;
+}
+@media only screen and (max-width: 600px) {
+  .modal__form__label {
+    font-size: 1.5rem;
+  }
 }
 .modal__form__label--hidden {
   opacity: 0;
@@ -282,6 +419,13 @@ a {
   color: white;
   font-size: 1.5rem;
   padding: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .modal__form__submit {
+    font-size: 1.1rem;
+    align-self: center;
+    padding: 5px 15px;
+  }
 }
 
 #message {
@@ -316,6 +460,12 @@ a {
   border: none;
   color: #901c1c;
 }
+@media only screen and (max-width: 600px) {
+  .lightbox__button {
+    margin: 10px;
+    font-size: 0.3rem;
+  }
+}
 .lightbox__content {
   position: relative;
   width: 100%;
@@ -324,11 +474,22 @@ a {
   justify-content: center;
   overflow: visible;
 }
+@media only screen and (max-width: 600px) {
+  .lightbox__content {
+    width: 290px;
+    height: 250px;
+  }
+}
 .lightbox__title {
   position: absolute;
   font-size: 1.5rem;
   bottom: -1.5rem;
   left: 0px;
+}
+@media only screen and (max-width: 600px) {
+  .lightbox__title {
+    bottom: -2rem;
+  }
 }
 .lightbox__video {
   width: 100%;
@@ -338,6 +499,12 @@ a {
   max-width: 1050px;
   object-fit: scale-down;
 }
+@media only screen and (max-width: 600px) {
+  .lightbox__image {
+    width: 290px;
+    height: 250px;
+  }
+}
 .lightbox__close {
   position: absolute;
   top: 30px;
@@ -346,6 +513,12 @@ a {
   background: none;
   border: none;
   color: #901c1c;
+}
+@media only screen and (max-width: 600px) {
+  .lightbox__close {
+    top: 200px;
+    font-size: 0.3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

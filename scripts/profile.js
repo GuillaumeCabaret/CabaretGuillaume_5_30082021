@@ -1,4 +1,6 @@
 import { Factory } from './Factory.js';
+import { modalSetUp } from './modal.js';
+import { lightboxClick } from './Lightbox.js';
 
 const profile = document.querySelector("#profile");
 const gallery = document.querySelector("#gallery");
@@ -106,7 +108,7 @@ function renderProfile() {
     folderName = photographInfo.name.split(" ");
     //extract photographer's tag and render them        
     for (let tag of photographInfo.tags) {
-        photographtags += `<a class="filter" href="https://GuillaumeCabaret.github.io/CabaretGuillaume_5_30082021/index.html#${tag}" aria-label="filtre ${tag}">#${tag}</a>`
+        photographtags += `<a class="filter" href="./index.html#${tag}" aria-label="filtre ${tag}">#${tag}</a>`
     }
     //render of photopraph profile
     profile.insertAdjacentHTML('afterbegin',
