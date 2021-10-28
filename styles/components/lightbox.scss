@@ -1,0 +1,79 @@
+@use "../utils/color.scss";
+.lightbox {
+    background-color: rgba(128, 128, 128, 0.507);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    color: color.$primary-color;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    &__container {
+        display: flex;
+        height: 100%;
+        width: auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__button {
+        margin: 50px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: color.$primary-color;
+        @media only screen and (max-width: 600px) {
+            margin: 10px;
+            font-size: 0.3rem;
+        }
+    }
+    &__content {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        overflow: visible;
+        @media only screen and (max-width: 600px) {
+            width: 290px;
+            height: 250px;
+        }
+    }
+    &__title {
+        position: absolute;
+        font-size: 1.5rem;
+        bottom: -1.5rem;
+        left: 0px;
+        @media only screen and (max-width: 600px) {
+            bottom: -2rem;
+        }
+    }
+    &__video {
+        width: 100%;
+    }
+    &__image {
+        height: 90vh;
+        max-width: 1050px;
+        object-fit: scale-down;
+        @media only screen and (max-width: 600px) {
+            width: 290px;
+            height: 250px;
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: color.$primary-color;
+        @media only screen and (max-width: 600px) {
+            top: 200px;
+            font-size: 0.3rem;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@use "../utils/color.scss";
+.button {
+    cursor: pointer;
+    &--contact {
+        border-radius: 5px;
+        background-color: color.$primary-color;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 23px 20px;
+        max-height: 70px;
+        border: none;
+        margin-left: 100px;
+        cursor: pointer;
+        @media only screen and (max-width: 600px) {
+            position: fixed;
+            bottom: 30px;
+            left: calc(50% - 68px);
+            padding: 10px;
+        }
+    }
+}
+
+.like-button {
+    border: none;
+    cursor: pointer;
+    color: color.$primary-color;
+    background: none;
+    font-size: 1.5rem;
+}

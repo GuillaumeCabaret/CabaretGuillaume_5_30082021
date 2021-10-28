@@ -1,0 +1,23 @@
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 25px;
+    @media only screen and (max-width: 600px) {
+        padding: 5px
+    }
+}

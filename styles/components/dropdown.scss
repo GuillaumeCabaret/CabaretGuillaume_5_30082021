@@ -1,0 +1,14 @@
+@use "../utils/color.scss";
+.dropdown {
+    background-color: color.$primary-color;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+}
