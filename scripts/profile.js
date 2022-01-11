@@ -36,6 +36,7 @@ function filterMedia(filter) {
     renderGallery();
 }
 
+//compare title of two differents elements title to return a value 
 function compareTitle(a, b) {
 
     if (a._title < b._title) {
@@ -47,6 +48,7 @@ function compareTitle(a, b) {
     return 0;
 }
 
+//compare likes of two differents elements to return a value 
 function compareLike(a, b) {
 
     if (a._like > b._like) {
@@ -58,6 +60,7 @@ function compareLike(a, b) {
     return 0;
 }
 
+//compare date of two differents elements to return a value 
 function compareDate(a, b) {
 
     if (a._date < b._date) {
